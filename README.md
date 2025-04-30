@@ -331,4 +331,27 @@ body {
 - margin (영역 바깥으로의 여백)
   => margin-top은 오류가 발생할 수 있다
 
-수정진행중
+## 8. position(중요)
+
+#### 8-1. 정확하게 px로 위치를 지정할 때
+
+- 주의할 점
+  => 바깥 영역에 `position: ralative`가 있어야 함
+
+```css
+position: absolute;
+left: 0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
+
+#### 8-2. 웹 브라우저에 특정 위치에 고정할 때
+
+```css
+position: fixed;
+left: 0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
