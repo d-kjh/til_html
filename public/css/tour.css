@@ -101,9 +101,7 @@
   font-size: 14px;
   font-weight: 400;
   color: #333;
-  /* 줄내림 방지 */
   white-space: nowrap;
-  /* 말줄임 처리 */
   overflow: hidden;
   text-overflow: ellipsis;
 }
