@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   // 1.  데이터를 가져옴
-  const dataUrl = "http://127.0.0.1:55128/public/api/banner.json";
+  const dataUrl = "http://127.0.0.1:5500/public/api/banner.json";
 
   /**
    * 데이터 연동
