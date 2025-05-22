@@ -2,12 +2,15 @@
   position: relative;
   margin-top: 30px;
 }
+.banner_fix {
+  padding-top: 50px;
+}
 .banner_slide {
   display: flex;
   gap: 25px;
 }
-.sw_banner {
-  border-radius: 15px;
+.sw_banner {===========================================================================================================================================
+  border-radius: 15px;[]
 }
 .banner_list {
   border-radius: 15px;
