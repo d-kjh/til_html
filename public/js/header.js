@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const search = this.document.querySelector(".search");
   const member = this.document.querySelector(".header_top_right");
   const eventMenu = this.document.querySelector(".header_bottom_eventmenu");
+  const main = this.document.querySelector(".main");
 
   // 윈도우에 스크롤(scroll 이벤트)이 일어나면 기능을 작동시킴
   this.window.addEventListener("scroll", function () {
@@ -28,6 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
       headerTop.classList.remove("header_top_down");
       search.classList.remove("search_down");
       member.classList.remove("member_down");
+      main.classList.remove("main_fixed");
     } else {
       // console.log("일부만 보여라");
       // 로고를 css로 제어하고 싶다
@@ -38,6 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
       headerTop.classList.add("header_top_down");
       search.classList.add("search_down");
       member.classList.add("member_down");
+      main.classList.add("main_fixed");
     }
   });
 });

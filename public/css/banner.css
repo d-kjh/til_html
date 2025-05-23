@@ -37,11 +37,11 @@
 
   z-index: 100;
 }
-.banner_left {
+.slide_bt_left {
   left: 0;
   transform: translateX(-50%) translateY(-50%) rotateY(180deg);
 }
-.banner_right {
+.slide_bt_right {
   right: 0;
   transform: translateX(50%) translateY(-50%);
 }

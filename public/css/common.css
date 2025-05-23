@@ -47,11 +47,42 @@ body {
     */
 }
 
-/*  */
 /* 반응형 작업 */
 body {
   background-color: skyblue;
 }
+/* header가 fixed가 되면 강제로 padding 넣기 */
+.main_fixed {
+  padding-top: 150px;
+}
+/* slide관련 공통 */
+.slide_bt {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+
+  z-index: 100;
+}
+.slide_bt_left {
+  left: 0;
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
+}
+.slide_bt_right {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+/* swiper 버튼 비활성시 표현 */
+.swiper-button-disabled {
+  display: none !important;
+}
+
 @media screen and (max-width: 1024px) {
   body {
     background-color: aqua;
