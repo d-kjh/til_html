@@ -1,10 +1,15 @@
+main {
+  padding-top: 150px;
+}
 .header {
-  position: relative;
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  left: 0;
+  top: 0;
 
   z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
 }
 .header_down {
   position: fixed;
@@ -156,7 +161,7 @@
 }
 
 /* 모바일 헤더 */
-.m_header {
+/* .m_header {
   position: fixed;
   left: 0;
   top: 0;
@@ -166,9 +171,13 @@
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
   z-index: 999;
-}
+} */
+
 /* 반응형 작업 */
 @media all and (max-width: 1024px) {
+  main {
+    padding-top: 54;
+  }
   .header {
     display: none;
   }

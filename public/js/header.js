@@ -2,7 +2,6 @@
 // DOM은 html 태그 구조를 말함 (Document Object Model) : 객체
 // 아래 문장은 html 이 완성되어졌으면 실행
 window.addEventListener("DOMContentLoaded", function () {
-  return;
   // 아래 구문은 header 변수를 만들고 html (document)에서 css 선택자로 값을 세팅
   const header = this.document.querySelector(".header");
   const headerTop = this.document.querySelector(".header_top");
@@ -37,11 +36,12 @@ window.addEventListener("DOMContentLoaded", function () {
       logo.style.display = "none";
       eventMenu.style.display = "none";
       // class 추가
-      header.classList.add("header_down");
+      // header.classList.add("header_down");
+
       headerTop.classList.add("header_top_down");
       search.classList.add("search_down");
       member.classList.add("member_down");
-      main.classList.add("main_fixed");
+      //main.classList.add("main_fixed");
     }
   });
 });
