@@ -133,3 +133,60 @@ position:fixed 라고 세팅하면 높이값이 반영이 안됨
 ```
 
 - 단축키 설정하기 : 설정 > Keyboard Shortcuts 선택
+- 검색어로 `postCSS Sorting:Run` 선택 : Shift + `
+
+### 4. 반응형 작업
+
+##### 4-1. 필수 체크 사항
+
+- 아래 구문이 없으면 화면 체크를 못해서 반응형 곤란
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+- 포토샵 또는 Figma로 디자인 제공되어짐(PC, 타블렛, 모바일)
+- 가능하면 큰 화면에서 모두 배치하고, 줄여가면서 배치하기를 권장
+- 필요하면 작업하면서 계속 @media를 추가
+
+```css
+/* 최대 크기 */
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 760px) {
+}
+@media all and (max-width: 540px) {
+}
+```
+
+##### 4-2. 작업시 참조
+
+- `웹브라우저 F12` 활용
+- `Dock 위치를 조절` or `디바이스 아이콘`으로 화면을 띄우고 진행
+
+##### 4-3. CSS작업
+
+```css
+@media all and (max-width: 1280px) {
+  .layout {
+    max-width: 1024px;
+  }
+}
+@media all and (max-width: 1240px) {
+  .layout {
+    max-width: 760px;
+  }
+}
+@media all and (max-width: 760px) {
+  .layout {
+    max-width: 100%;
+  }
+}
+```
+
+- header 영역 css 작업
+- header 와 반응형 header 를 분리해서 만들면 편함
