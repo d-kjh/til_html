@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의 til</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <!-- 외부라이브러리 -->
     <link
       rel="stylesheet"
@@ -101,7 +105,20 @@
         </div>
       </header>
       <!-- 모바일 상단 -->
-      <div class="m_header">모바일 헤더</div>
+      <div class="m_header">
+        <div class="m_header_menu">
+          <a href="#">홈</a>
+          <a href="#">투어</a>
+          <a href="#">티켓</a>
+        </div>
+
+        <div class="m_header_search">
+          <a href="#">
+            <img src="images/btn_search.svg" alt="제품검색" />
+          </a>
+        </div>
+      </div>
+
       <!-- 메인 -->
       <main class="main">
         <div class="layout">
@@ -112,8 +129,10 @@
               <div class="swiper-wrapper">
                 <!-- API 연동 -->
               </div>
-              <div class="swiper-pagination"></div>
             </div>
+
+            <div class="swiper-pagination sw_banner_pg"></div>
+
             <button class="slide_bt banner_prev slide_bt_left">
               <img src="images/slider_arrow.svg" alt="left" title="left" />
             </button>
@@ -142,8 +161,6 @@
                   <div class="swiper-wrapper">
                     <!-- API 연동 -->
                   </div>
-                  <div class="swiper-button-disabled"></div>
-                  <div class="swiper-button-disabled"></div>
                 </div>
 
                 <button class="slide_bt tour_prev slide_bt_left">
