@@ -53,14 +53,14 @@
   .sw_banner_pg .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
-    opacity: 0.4;
     background-color: #fff !important;
+    opacity: 0.4;
   }
   /* 포커스시 버튼 모습 */
   .sw_banner_pg .swiper-pagination-bullet-active {
     width: 7px;
     height: 7px;
-    opacity: 1;
     background-color: #fff !important;
+    opacity: 1;
   }
 }

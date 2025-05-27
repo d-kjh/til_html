@@ -1,0 +1,12 @@
+.wrap {
+  position: relative;
+  .header {
+    width: 100%;
+    &_left {
+      position: relative;
+      &_box {
+        position: relative;
+      }
+    }
+  }
+}

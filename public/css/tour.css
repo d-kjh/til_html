@@ -1,22 +1,25 @@
 .tour {
+  position: relative;
   margin-top: 65px;
 }
+
 .section_top {
   padding-bottom: 22px;
 }
 .section_title {
   font-size: 28px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
 }
 .section_desc {
   display: block;
   font-size: 18px;
-  font-weight: 300px;
+  font-weight: 300;
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.75);
 }
 .section_list {
+  position: relative;
 }
 .section_category {
   display: flex;
@@ -32,8 +35,8 @@
 .section_category_bts > li > button {
   padding: 15px 20px;
   font-size: 14px;
-  font-weight: 400px;
-  background-color: #fff;
+  font-weight: 400;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 52px;
 
@@ -41,15 +44,15 @@
   cursor: pointer;
 }
 .section_category_bts > li > button.cate_focus {
-  font-weight: 700px;
+  font-weight: 700;
   color: #fff;
   background-color: #333333;
-  border: 1px solid #333;
+  border: 1px solid #333333;
 }
+
 .section_slide {
   position: relative;
-  display: flex;
-  gap: 25px;
+
   margin-bottom: 20px;
 }
 .item {
@@ -58,6 +61,7 @@
   border: 1px solid #e5e5e5;
   border-radius: 10px;
 }
+
 .item > a {
 }
 .item_image {
@@ -66,10 +70,11 @@
   overflow: hidden;
   margin-bottom: 25px;
 }
+
 .item_image > img {
   display: block;
   width: 100%;
-  /* 비율을 유지하면서 영역에 이미지 가득채우기 */
+  /* 비율을 유지하면서 영역에 이미지 가득 채우기 */
   height: 100%;
   object-fit: cover;
 }
@@ -79,15 +84,19 @@
   left: 20px;
   padding: 10px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
+
   background-color: #1769ff;
+
   border-radius: 4px;
 }
+
 .item_text {
   padding: 20px;
   padding-top: 5px;
 }
+
 .item_cupon {
   display: block;
   /* 말줄임 처리 */
@@ -118,6 +127,7 @@
   font-size: 20px;
   font-weight: 700;
 }
+
 .section_bts {
   display: flex;
   justify-content: center;
@@ -149,9 +159,9 @@
     padding-bottom: 12px;
   }
   .tour .section_title {
-    font-style: 21px;
+    font-size: 21px;
   }
-  .tour.section_desc {
+  .tour .section_desc {
     font-size: 15px;
   }
   .tour .section_category {
@@ -159,5 +169,41 @@
   }
   .section_category_bts > li > button {
     padding: 9px 20px;
+  }
+
+  /* 반응형 슬라이드 높이 설정 */
+  .item {
+    height: 222px !important;
+  }
+  .item_image {
+    height: 138px !important;
+    margin-bottom: 15px !important;
+  }
+  .item_name {
+    top: 127px;
+    left: 8px;
+    padding: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .item_cupon {
+  }
+  .item_desc {
+  }
+  .item_price {
+    font-size: 14px;
+  }
+  .item_price > b {
+    font-size: 14px;
+  }
+  .item_text {
+    padding: 5px;
+  }
+  .section_bts > a {
+    justify-content: center;
+    width: 95%;
+    padding: 15px 20px;
+    border-radius: 4px;
   }
 }

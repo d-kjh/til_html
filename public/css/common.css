@@ -19,6 +19,9 @@ ul {
 html {
   width: 100%;
   font-size: 12px; /* 디자인 보고 수정 */
+  min-width: 540px;
+  /* 가로 스크롤은 UI상 좋지 않음 */
+  overflow-x: hidden;
 }
 
 body {
