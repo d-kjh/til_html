@@ -1,4 +1,6 @@
 .trip {
+  position: relative;
+  margin-top: 65px;
 }
 .W_trip {
   display: flex;
@@ -19,14 +21,22 @@
   margin-top: 15px;
 }
 .trip_item {
-  display: flex;
-  background-color: green;
+  display: inline-block;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row;
+  justify-content: space-around; */
+  margin: 15px;
+  margin-right: 45px;
+  width: 20%;
+  height: 20%;
+  border: 1px solid #e5e5e5;
+  border-radius: 1.2em;
 }
 .trip_item_img {
-  display: flex;
-  position: relative;
-  width: 50px;
-  height: 300px;
-  border: 1px;
-  border-radius: px;
+  border-radius: 1.2em;
+}
+.trip_item_img > img {
 }
